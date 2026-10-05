@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To do list</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My To Do List 📋</h1>
+
+    <div class="input-box">
+      <input type="text" id="taskInput" placeholder="Tambahkan to do list">
+      <button id="addBtn">tambah</button>
+    </div>
+    <p id="warning" class="warning" hidden>⚠️ Tugas tidak boleh kosong, silakan ketik sesuatu dulu.</p>
+
+    <ul id="taskList"></ul>
+
+    <div class="stats">
+      <div class="stat">
+        <span id="totalCount">0</span>
+        <small>Total Tugas</small>
+      </div>
+      <div class="stat">
+        <span id="doneCount">0</span>
+        <small>Selesai</small>
+      </div>
+      <div class="stat">
+        <span id="pendingCount">0</span>
+        <small>Belum Selesai</small>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
